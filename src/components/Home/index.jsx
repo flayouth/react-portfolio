@@ -13,7 +13,7 @@ const Home = () => {
     setShowPopup(!showPopup); // toggle the state when the button is clicked
   };
 
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass] = useState('text-animate');
   const nameArray = ['e', 'e', 'n', 'a', 'n'];
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
 

@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser"
 import Loader from 'react-loaders'
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass] = useState('text-animate')
     const form = useRef()
   
   
