@@ -34,7 +34,7 @@ const Home = () => {
         <h2>
           Fullstack Developer / React Expert / Black-Belt in Google-fu
           <div className="about-container">
-            <button onClick={handlePopup}>About me</button> {/* Add a button to trigger the popup */}
+            <button onClick={handlePopup}>ABT ME</button> {/* Add a button to trigger the popup */}
             {showPopup && ( // render the popup container if the state is true
               <div className="popup-container">
                 <h1>

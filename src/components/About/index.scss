@@ -11,6 +11,7 @@ body {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  left: 10px;
 }
 
 .project {
@@ -68,3 +69,9 @@ p {
 }
 
 
+@media only screen and (max-width: 390px) {
+  .project {
+    margin-left: auto;
+    
+  }
+}
