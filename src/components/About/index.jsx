@@ -9,8 +9,8 @@ const About = () => {
       title: 'Weather Dashboard',
       description: 'A weather app that displays the current weather and a 5-day forecast.',
       image: 'weather.jpg',
-      link: 'https://flayouth.github.io/Weather-Dashboard/',
-      github: null,
+      link: 'https://flayouth.github.io/Weather-Dashboard',
+      github: 'https://github.com/flayouth/weather-dashboard',
     },
     {
       id: 2,
@@ -28,6 +28,14 @@ const About = () => {
       link: 'https://flayouth.github.io/Random-Password-Generator/',
       github: 'https://github.com/flayouth/Random-Password-Generator',
     },
+    {
+      id: 4,
+      title: 'React Portfolio',
+      description: 'Current and previous changes to my personal portfolio.',
+      image: 'port.png',
+      link: 'https://github.com/flayouth/react-portfolio',
+      github: 'https://github.com/flayouth/react-portfolio',
+    },
   ];
 
   return (
@@ -40,16 +48,12 @@ const About = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </a>
-          </div>
-        ))}
-      </div>
-      <div className="github-links">
-        {projects.map((project) => (
-          <div key={project.id} className="github-link">
             {project.github && (
-              <a href={project.github} target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
+              <div className="github-link">
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
             )}
           </div>
         ))}
@@ -59,3 +63,4 @@ const About = () => {
 };
 
 export default About;
+

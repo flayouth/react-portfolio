@@ -126,16 +126,16 @@
 
     .popup-container {
       color: #fff;
-      background-color: #4267b2ec;
+      background-color: #1b2e53;
       position: fixed;
-      top: 89%;
-      right: 250px;
+      top: 100%;
+      right: 350px;
       transform: translateY(-50%);
       border-radius: 20px;
       padding: 20px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-      width: 300px;
-      height: 700px;
+      width: 290px;
+      height: 615px;
       display: flex;
       flex-direction: column;
       animation: fadeIn 1s 0.5s backwards;
@@ -147,10 +147,11 @@
         top: -20px;
         right: 30px;
         border-top: 20px solid transparent;
-        border-right: 20px solid #4267b29e;
+        border-right: 20px solid #1b2e53d8;
         border-bottom: 20px solid transparent;
       }
-    
+ 
+      
       p {
         font-size: 15px;
         line-height: 1.1;
@@ -160,7 +161,7 @@
     }
     
     .about-text {
-      margin: 20px auto 0;
+      margin: 0px auto 0;
       color: #2e2e2e8f;
       animation: fadeIn 1s 5s backwards;
       margin-left: 70%;
@@ -249,7 +250,13 @@
           .btn-bottom-stripe--blue {
             color: rgb(58, 134, 255);
             border: 2px solid rgb(58, 134, 255);
+            font-size: 1.4rem;
+            font-family: monospace;
+            letter-spacing: 1rem;
+            font-weight: 900;
           } 
+
+  
            
           .btn-bottom-stripe--blue::after {
             border-top: 2px solid rgb(58, 134, 255);
@@ -259,6 +266,7 @@
           .btn-bottom-stripe--blue:hover {
             background-color: rgb(58, 134, 255);
           } 
+        
 
 
           .stage-cube-cont {
@@ -347,6 +355,8 @@
 }
 
 
+
+
 @media (max-width: 767px) {
 
   .home-page {
@@ -387,7 +397,7 @@
     padding: 10px 20px;
     background-color: #4267b2b0;
     color: #ffffffec;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-left: -8px;
     border: none;
     cursor: pointer;
@@ -474,5 +484,135 @@
 }
   }
 
+  @media (max-width: 767px) {
 
+    .home-page {
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+      
+      /* Custom Scrollbar */
+      &::-webkit-scrollbar {
+        width: 12px;
+        background-color: #f5f5f5;
+      }
+    
+      &::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background-color: #333333;
+        border-radius: 10px;
+        border: 3px solid #f5f5f5;
+      }
+    
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #555555;
+      }
+  
+      .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        color: rgba(193, 188, 188, 0.689);
+  
+        h1 {
+          color: rgb(255, 255, 255);
+          font-size: 27px;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 300;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+  
+          img {
+            width: 32px;
+            border-radius: 10%;
+            margin-left: 10px;
+            margin-bottom: -3px;
+            opacity: 1;
+            height: auto;
+            animation: rotateIn 1s 1.7s linear both;
+          }
+        }
+  
+        h2 {
+          color: #8d8d8d;
+          margin-top: 20px;
+          font-weight: 400;
+          font-size: 15px;
+          font-family: sans-serif;
+          letter-spacing: 3px;
+          animation: fadeIn 1s 3.2s backwards;
+          margin-bottom: 0px;
+        }
+      }
+  
+      /* Custom Scrollbar */
+      &::-webkit-scrollbar {
+        width: 12px;
+  
+        &-track {
+          background-color: #f5f5f5;
+          border-radius: 10px;
+        }
+  
+        &-thumb {
+          background-color: #333333;
+          border-radius: 10px;
+          border: 3px solid #f5f5f5;
+  
+          &:hover {
+            background-color: #555555;
+          }
+        }
+      }
+  
+      .about-container {
+        background-image: url(../../assets/me2.jpg);
+        background-size: cover;
+        padding: 20px;
+        border-radius: 70px;
+        max-width: 400px;
+        margin: 50px auto 0;
+        color: #fff;
+        animation: fadeIn 1s 3.9s backwards;
+        height: 400px;
+        opacity: 0.9;
+        margin-bottom: 6%;
+        position: relative;
+  
+        button {
+          padding: 10px 20px;
+          background-color: #4267b2b0;
+          color: #ffffffec;
+          font-size: 2rem;
+          border: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: absolute;
+          right: 300px;
+          animation: bounce 3s infinite;
+          border-radius: 20px;
+          font-family: monospace;
+
+          .popup-container {
+            color: #fff;
+            background-color: #4267b2ec;
+            position: fixed;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+         
+        }
+      }
+    }
+  }  
+  }
 

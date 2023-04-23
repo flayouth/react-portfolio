@@ -31,25 +31,25 @@ const Home = () => {
           <br />
           <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
         </h1>
-        <h2>
-          Fullstack Developer / React Expert / Black-Belt in Google-fu
+         <h2>
+          Fullstack Developer / React Novice / Black-Belt in Google-fu
           <div className="about-container">
-            <button onClick={handlePopup}>ABT ME</button> {/* Add a button to trigger the popup */}
+            <button onClick={handlePopup}>ABOUT ME</button> {/* Add a button to trigger the popup */}
             {showPopup && ( // render the popup container if the state is true
               <div className="popup-container">
                 <h1>
                   <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={15} />
                 </h1>
                 <p>
-                  I am a front end developer with a passion for creating interactive user experiences. I have a strong foundation in
+                  I am a full stack developer with a passion for creating interactive user experiences. I have a strong foundation in
                   HTML, CSS, JavaScript, and various frameworks. I am constantly learning and implementing the latest tools and
                   techniques in web development to create innovative solutions.
                 </p>
                 <p>
-                  As a confident and curious developer, I am continuously seeking opportunities to improve and enhance my skills.
+                  I am continuously seeking opportunities to improve and enhance my skills.
                 </p>
                 <p>
-                  As a humble frontend developer, I understand the importance of working collaboratively with teams and listening
+                  As a UCF bootcamp developer, I understand the importance of working collaboratively with teams and listening
                   to feedback to create the best user experiences. I am committed to constantly learning and improving my skills to
                   deliver the highest quality of work.
                 </p>

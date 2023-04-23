@@ -3,6 +3,7 @@ body {
   overflow-y: scroll;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
 .projects {
@@ -37,7 +38,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   margin-bottom: 1rem;
 }
 
@@ -50,6 +51,33 @@ p {
   font-size: 1.5rem;
   font-family: monospace;
 }
+.github-link {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+
+}
+
+.github-link a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.github-link a:hover {
+  background-color: #555;
+}
+
+.github-link a:focus {
+  outline: none;
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -69,9 +97,77 @@ p {
 }
 
 
-@media only screen and (max-width: 390px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
   .project {
-    margin-left: auto;
-    
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: calc(50% - 1rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project:nth-child(even) {
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    font-family: monospace;
+  }
+  
+  .github-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+  
+  .github-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-link a:hover {
+    background-color: #555;
+  }
+  
+  .github-link a:focus {
+    outline: none;
   }
 }
+
+
+
